@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reports</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>📊 Expense Reports</h1>
+
+<h2>Total Expense: ₹{{ total }}</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" style="margin:auto;">
+<tr>
+<th>Category</th>
+<th>Total</th>
+</tr>
+
+{% for row in category_data %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>₹{{ row[1] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/" class="btn">🏠 Home</a>
+
+</div>
+
+</body>
+</html>
