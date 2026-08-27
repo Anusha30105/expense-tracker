@@ -1,0 +1,4 @@
+Flask
+Werkzeug
+fpdf2
+gunicorn
