@@ -1,0 +1,30 @@
+body{
+    background: linear-gradient(to right,#4facfe,#00f2fe);
+    min-height:100vh;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.btn{
+    border-radius:30px;
+}
+
+h1{
+    color:white;
+}
+
+p{
+    color:white;
+}
